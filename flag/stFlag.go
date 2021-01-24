@@ -9,8 +9,8 @@ func main() {
 	//go run stFlag.go -name=x -n=xx
 	//out name:xx
 	var name string
-	flag.StringVar(&name, "name", "Go编程之旅", "帮助信息")
-	flag.StringVar(&name, "n", "Go编程之旅", "帮助信息")
+	flag.StringVar(&name, "name", "Go编程之旅 cmd-flag arg-name", "帮助信息")
+	flag.StringVar(&name, "n", "Go编程之旅 cmd-flag arg-n", "帮助信息")
 	flag.Parse()
 	log.Printf("name: %s", name)
 }
